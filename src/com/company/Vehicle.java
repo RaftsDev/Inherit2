@@ -25,4 +25,12 @@ public class Vehicle {
         currentDirection = direction;
         System.out.println("velocity:"+currentVelocity+" direction:"+currentDirection);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSize() {
+        return size;
+    }
 }
