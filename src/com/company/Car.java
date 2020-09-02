@@ -19,5 +19,6 @@ public class Car extends Vehicle{
 
     public void setCurrentGear(int currentGear) {
         this.currentGear = currentGear;
+        System.out.println("CurrnetGear become:"+this.currentGear);
     }
 }
