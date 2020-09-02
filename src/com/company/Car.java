@@ -17,8 +17,13 @@ public class Car extends Vehicle{
         this.currentGear = 1;
     }
 
-    public void setCurrentGear(int currentGear) {
+    public void changeGear(int currentGear) {
         this.currentGear = currentGear;
         System.out.println("CurrnetGear become:"+this.currentGear);
+    }
+
+    public void changeVelocity(int speed, int direction){
+        move(speed,direction);
+        System.out.println("velocity:"+speed+" direction:"+direction);
     }
 }
