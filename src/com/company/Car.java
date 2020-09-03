@@ -22,7 +22,7 @@ public class Car extends Vehicle{
         System.out.println("CurrnetGear become:"+this.currentGear);
     }
 
-    public void changeVelocity(int speed, int direction){
+    public void changeVelocity(int speed, int direction) {
         move(speed,direction);
         System.out.println("velocity:"+speed+" direction:"+direction);
     }
