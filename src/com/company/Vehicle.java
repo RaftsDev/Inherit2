@@ -18,7 +18,7 @@ public class Vehicle {
 
     public void steer(int direction) {
         currentDirection += direction;
-        System.out.println("direction:"+currentDirection);
+        System.out.println("Vehicle.steer(): Steering at " + currentDirection + " degrees.");
     }
 
     public void move(int velocity, int direction) {
