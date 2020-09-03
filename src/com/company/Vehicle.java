@@ -5,6 +5,7 @@ public class Vehicle {
     private String size;
 
     private int currentVelocity;
+
     private int currentDirection;
 
     public Vehicle(String name, String size) {
@@ -32,5 +33,18 @@ public class Vehicle {
 
     public String getSize() {
         return size;
+    }
+
+    public int getCurrentVelocity() {
+        return currentVelocity;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public void Stop() {
+        currentVelocity = 0;
+        System.out.println("Vehicle stoped");
     }
 }
