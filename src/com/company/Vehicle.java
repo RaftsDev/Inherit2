@@ -12,16 +12,16 @@ public class Vehicle {
         this.name = name;
         this.size = size;
 
-        this.currentVelocity=0;
-        this.currentDirection=0;
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
     }
 
-    public void steer(int direction){
+    public void steer(int direction) {
         currentDirection += direction;
         System.out.println("direction:"+currentDirection);
     }
 
-    public void move(int velocity, int direction){
+    public void move(int velocity, int direction) {
         currentVelocity = velocity;
         currentDirection = direction;
         System.out.println("velocity:"+currentVelocity+" direction:"+currentDirection);
