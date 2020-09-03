@@ -11,19 +11,19 @@ public class Vehicle {
         this.name = name;
         this.size = size;
 
-        this.currentVelocity=0;
-        this.currentDirection=0;
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
     }
 
-    public void steer(int direction){
+    public void steer(int direction) {
         currentDirection += direction;
-        System.out.println("direction:"+currentDirection);
+        System.out.println("Vehicle.steer(): Steering at " + currentDirection + " degrees.");
     }
 
-    public void move(int velocity, int direction){
+    public void move(int velocity, int direction) {
         currentVelocity = velocity;
         currentDirection = direction;
-        System.out.println("velocity:"+currentVelocity+" direction:"+currentDirection);
+        System.out.println("Vehicle.move(): Moving at " + currentVelocity + " in direction " + currentDirection);
     }
 
     public String getName() {
