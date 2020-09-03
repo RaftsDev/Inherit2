@@ -1,10 +1,10 @@
 package com.company;
 
 public class Outlander extends Car{
-    private String serviceTime;
+    private int serviceMonth;
 
-    public Outlander(String name, String size, String serviceTime) {
-        super(name, size, 4, 5, 5, false, 0);
-        this.serviceTime = serviceTime;
+    public Outlander(String name, String size, int serviceMonth) {
+        super("Outlander", "4WD", 5, 5,6,false);
+        this.serviceMonth = serviceMonth;
     }
 }
